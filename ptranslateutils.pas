@@ -52,8 +52,10 @@ begin
       filename+='.po';
     end;
     filename:=globalPodirectory+filename;
-    poFile:=TPOFile.Create(format(filename,[globalLang]));
-    pofallbackFile:=TPOFile.Create(format(filename,[globalFallbacklang]));
+    if FileExists(format(filename,[globalLang])) then poFile:=TPOFile.Create(format(filename,[globalLang]))
+    else pofile:=nil;
+    if FileExists(format(filename,[globalFallbacklang])) then pofallbackFile:=TPOFile.Create(format(filename,[globalFallbacklang]))
+    else pofallbackFile:=nil;
   end;
 end;
 
