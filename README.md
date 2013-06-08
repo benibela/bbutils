@@ -5,8 +5,11 @@ These units consist of important low-level functions missing in FreePascal. For 
 
 *    Various array functions (add, delete, search, prealloc, ...)
 *    Various string functions (pchar/ansistring, compare, split, search, convert html entities, ...)
-*    Mathematical functions (gcd, primes, Bernoulli statistics,...)
+*    Various date/time parsing/formatting functions, supporting years before 0 and after 65535, and timezones
+*    Mathematical functions (gcd, primes, Bernoulli statistics, prime/euler-phi sieve...)
+*    Stable sorting function for arbitrary sized data arrays (merge+insert sort)
 *    Automatical translation of with tr['marked strings'] and components
+*    A Pascal template language which is "compiled" to Pascal (similar to the C preprocessor)
 
 
  
