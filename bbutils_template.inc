@@ -375,7 +375,7 @@ begin
   {%END-COMPARE}
 end;
 
-function arrayBinarySearch(a: T__ArrayType__; value: T__ElementType__; choosen: TBinarySearchChoosen = bsAny; condition: TBinarySearchAcceptedConditions = [bsEqual]): integer;
+function arrayBinarySearch(a: T__ArrayType__; const value: T__ElementType__; choosen: TBinarySearchChoosen = bsAny; condition: TBinarySearchAcceptedConditions = [bsEqual]): integer;
 var
   element: Pointer;
 begin

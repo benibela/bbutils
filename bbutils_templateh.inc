@@ -120,7 +120,7 @@ function intBound(min, i, max: T__INT__NUMBER__): T__INT__NUMBER__; overload;
 //** @br @code(choosen) which value it should return, if there are multiple possible matches
 //** @br @code(condition) how the reference value should be compared with the values in the array (e.g. [bsGreater, bsEqual] will only return a match that is greater-or-equal-than @code(value))
 //** returns the index of the found match or -1 if there is no match
-function arrayBinarySearch(a: T__ArrayType__; value: T__ElementType__; choosen: TBinarySearchChoosen = bsAny; condition: TBinarySearchAcceptedConditions = [bsEqual]): integer; overload;
+function arrayBinarySearch(a: T__ArrayType__; const value: T__ElementType__; choosen: TBinarySearchChoosen = bsAny; condition: TBinarySearchAcceptedConditions = [bsEqual]): integer; overload;
 {%END-REPEAT}
 
 

@@ -380,7 +380,7 @@ function intBound(min, i, max: int64): int64; overload;
 //** @br @code(choosen) which value it should return, if there are multiple possible matches
 //** @br @code(condition) how the reference value should be compared with the values in the array (e.g. [bsGreater, bsEqual] will only return a match that is greater-or-equal-than @code(value))
 //** returns the index of the found match or -1 if there is no match
-function arrayBinarySearch(a: TStringArray; value: string; choosen: TBinarySearchChoosen = bsAny; condition: TBinarySearchAcceptedConditions = [bsEqual]): integer; overload;
+function arrayBinarySearch(a: TStringArray; const value: string; choosen: TBinarySearchChoosen = bsAny; condition: TBinarySearchAcceptedConditions = [bsEqual]): integer; overload;
 
 //** Binary search in a longint array @br
 //** @br @code(a) the ascending, sorted array
@@ -388,7 +388,7 @@ function arrayBinarySearch(a: TStringArray; value: string; choosen: TBinarySearc
 //** @br @code(choosen) which value it should return, if there are multiple possible matches
 //** @br @code(condition) how the reference value should be compared with the values in the array (e.g. [bsGreater, bsEqual] will only return a match that is greater-or-equal-than @code(value))
 //** returns the index of the found match or -1 if there is no match
-function arrayBinarySearch(a: TLongintArray; value: longint; choosen: TBinarySearchChoosen = bsAny; condition: TBinarySearchAcceptedConditions = [bsEqual]): integer; overload;
+function arrayBinarySearch(a: TLongintArray; const value: longint; choosen: TBinarySearchChoosen = bsAny; condition: TBinarySearchAcceptedConditions = [bsEqual]): integer; overload;
 
 //** Binary search in a longword array @br
 //** @br @code(a) the ascending, sorted array
@@ -396,7 +396,7 @@ function arrayBinarySearch(a: TLongintArray; value: longint; choosen: TBinarySea
 //** @br @code(choosen) which value it should return, if there are multiple possible matches
 //** @br @code(condition) how the reference value should be compared with the values in the array (e.g. [bsGreater, bsEqual] will only return a match that is greater-or-equal-than @code(value))
 //** returns the index of the found match or -1 if there is no match
-function arrayBinarySearch(a: TLongwordArray; value: longword; choosen: TBinarySearchChoosen = bsAny; condition: TBinarySearchAcceptedConditions = [bsEqual]): integer; overload;
+function arrayBinarySearch(a: TLongwordArray; const value: longword; choosen: TBinarySearchChoosen = bsAny; condition: TBinarySearchAcceptedConditions = [bsEqual]): integer; overload;
 
 //** Binary search in a int64 array @br
 //** @br @code(a) the ascending, sorted array
@@ -404,7 +404,7 @@ function arrayBinarySearch(a: TLongwordArray; value: longword; choosen: TBinaryS
 //** @br @code(choosen) which value it should return, if there are multiple possible matches
 //** @br @code(condition) how the reference value should be compared with the values in the array (e.g. [bsGreater, bsEqual] will only return a match that is greater-or-equal-than @code(value))
 //** returns the index of the found match or -1 if there is no match
-function arrayBinarySearch(a: TInt64Array; value: int64; choosen: TBinarySearchChoosen = bsAny; condition: TBinarySearchAcceptedConditions = [bsEqual]): integer; overload;
+function arrayBinarySearch(a: TInt64Array; const value: int64; choosen: TBinarySearchChoosen = bsAny; condition: TBinarySearchAcceptedConditions = [bsEqual]): integer; overload;
 
 //** Binary search in a float array @br
 //** @br @code(a) the ascending, sorted array
@@ -412,7 +412,7 @@ function arrayBinarySearch(a: TInt64Array; value: int64; choosen: TBinarySearchC
 //** @br @code(choosen) which value it should return, if there are multiple possible matches
 //** @br @code(condition) how the reference value should be compared with the values in the array (e.g. [bsGreater, bsEqual] will only return a match that is greater-or-equal-than @code(value))
 //** returns the index of the found match or -1 if there is no match
-function arrayBinarySearch(a: TFloatArray; value: float; choosen: TBinarySearchChoosen = bsAny; condition: TBinarySearchAcceptedConditions = [bsEqual]): integer; overload;
+function arrayBinarySearch(a: TFloatArray; const value: float; choosen: TBinarySearchChoosen = bsAny; condition: TBinarySearchAcceptedConditions = [bsEqual]): integer; overload;
 
 
 

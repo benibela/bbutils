@@ -1672,7 +1672,7 @@ const entityIndices: array[boolean] of array[0..25] of array [0..1] of integer =
 (1536, 1596), 	(1597, 1665), 	(1666, 1676), 	(1677, 1779), 	(1780, 1934), 
 (1935, 1992), 	(1993, 2044), 	(2045, 2076), 	(2077, 2087), 	(2088, 2111), 
 (2112, 2125), 	(2126, 2138)	));
-var code,j,resLen:integer;
+var j,resLen:integer;
     lastChar: pchar;
     entity,entityStart, entityEnd, entityMid, entityBase: longint;
     ok: boolean;
@@ -1961,7 +1961,7 @@ begin
   
 end;
 
-function arrayBinarySearch(a: TStringArray; value: string; choosen: TBinarySearchChoosen = bsAny; condition: TBinarySearchAcceptedConditions = [bsEqual]): integer;
+function arrayBinarySearch(a: TStringArray; const value: string; choosen: TBinarySearchChoosen = bsAny; condition: TBinarySearchAcceptedConditions = [bsEqual]): integer;
 var
   element: Pointer;
 begin
@@ -1982,7 +1982,7 @@ begin
   
 end;
 
-function arrayBinarySearch(a: TLongintArray; value: longint; choosen: TBinarySearchChoosen = bsAny; condition: TBinarySearchAcceptedConditions = [bsEqual]): integer;
+function arrayBinarySearch(a: TLongintArray; const value: longint; choosen: TBinarySearchChoosen = bsAny; condition: TBinarySearchAcceptedConditions = [bsEqual]): integer;
 var
   element: Pointer;
 begin
@@ -2003,7 +2003,7 @@ begin
   
 end;
 
-function arrayBinarySearch(a: TLongwordArray; value: longword; choosen: TBinarySearchChoosen = bsAny; condition: TBinarySearchAcceptedConditions = [bsEqual]): integer;
+function arrayBinarySearch(a: TLongwordArray; const value: longword; choosen: TBinarySearchChoosen = bsAny; condition: TBinarySearchAcceptedConditions = [bsEqual]): integer;
 var
   element: Pointer;
 begin
@@ -2024,7 +2024,7 @@ begin
   
 end;
 
-function arrayBinarySearch(a: TInt64Array; value: int64; choosen: TBinarySearchChoosen = bsAny; condition: TBinarySearchAcceptedConditions = [bsEqual]): integer;
+function arrayBinarySearch(a: TInt64Array; const value: int64; choosen: TBinarySearchChoosen = bsAny; condition: TBinarySearchAcceptedConditions = [bsEqual]): integer;
 var
   element: Pointer;
 begin
@@ -2045,7 +2045,7 @@ begin
   
 end;
 
-function arrayBinarySearch(a: TFloatArray; value: float; choosen: TBinarySearchChoosen = bsAny; condition: TBinarySearchAcceptedConditions = [bsEqual]): integer;
+function arrayBinarySearch(a: TFloatArray; const value: float; choosen: TBinarySearchChoosen = bsAny; condition: TBinarySearchAcceptedConditions = [bsEqual]): integer;
 var
   element: Pointer;
 begin
