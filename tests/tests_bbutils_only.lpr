@@ -18,6 +18,8 @@ begin
   setCodePageCanConvertEncodings := false;
   {$endif}
   bbutils_tests.unitTests;
-  writeln('OK  (time: ', (now-start)*24*60*60*1000:5:5,')');
+  writeln('time: ', (now-start)*24*60*60*1000:5:5);
+  writeln(globalTestCount, ' tests successful');
+
 end.
 
