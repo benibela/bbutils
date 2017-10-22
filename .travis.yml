@@ -10,7 +10,7 @@ install:
   - sudo apt-get install -qq -y fpc
 
 script:
-  - fpc -O2 tests/tests_bbutils_only.lpr 
+  - fpc -O2 -gl tests/tests_bbutils_only.lpr 
   - tests/tests_bbutils_only
 
 notifications:
