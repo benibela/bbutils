@@ -3,7 +3,7 @@ program tests_bbutils_only;
 
 uses
   {$ifdef unix}cwstring,{$endif}
-  bbutils_tests, sysutils;
+  bbutils_tests, commontestutils, sysutils;
 
 var
   start: TDateTime;
