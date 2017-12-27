@@ -50,10 +50,15 @@ type
  end;
 
 
-
+function objInheritsFrom(o: TObject; c: TClass): boolean; inline;
 
 
 implementation
+
+function objInheritsFrom(o: TObject; c: TClass): boolean;
+begin
+  result := assigned(o) and o.InheritsFrom(c);
+end;
 
 function TCommonEnumerator.GetCurrent: T;
 begin
