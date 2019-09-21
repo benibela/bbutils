@@ -7,12 +7,10 @@ os:
 
 env:
   matrix:
-    - FPC_VER=3.0.4
     - FPC_VER=PAK
 
 install:
   - if [[ $FPC_VER = PAK ]]; then sudo apt-get update -qq; sudo apt-get install -qq -y fpc; fi
-  - if [[ $FPC_VER = 3.0.4 ]]; then wget http://mirrors.iwi.me/lazarus/releases/Lazarus%20Linux%20amd64%20DEB/Lazarus%201.8.0RC5/fpc_3.0.4-rc1_amd64.deb; sudo dpkg --force-overwrite -i *.deb; fi
 
 script:
   - fpc -O2 -gl tests/tests_bbutils_only.lpr 
