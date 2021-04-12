@@ -1,4 +1,4 @@
-BButils [![Build Status](https://travis-ci.org/benibela/bbutils.svg?branch=master)](https://travis-ci.org/benibela/bbutils)
+BButils [![Build Status](https://api.travis-ci.com/benibela/bbutils.svg?branch=master)](https://travis-ci.org/benibela/bbutils)
 =============
  
 These units consist of important low-level functions missing in FreePascal. For example:
